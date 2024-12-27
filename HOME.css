@@ -1,0 +1,141 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Cor de fundo branca */
+}
+
+/* Header */
+.barra-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px double #072f60; /* Borda dupla com o tom de azul */
+  padding: 15px;
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+}
+
+.logo img {
+  height: 40px;
+}
+
+.titulo-site { 
+  color: #072f60; /* Cor da letra azul principal */ 
+  font-size: 2rem; /* Tamanho da fonte relativo */ 
+  font-weight: bold; 
+  margin-left: 1rem; /* Margem relativa */ 
+  display: inline-block; 
+  vertical-align: middle; 
+}
+
+.botao-menu {
+  background-color: #072f60; /* Cor de fundo azul principal */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-menu:hover {
+  background-color: #3b5663; /* Cor de fundo cinza ao passar o mouse */
+}
+
+.menu {
+  display: none; /* Inicialmente escondido */
+}
+
+.menu.ativa {
+  display: block; /* Mostra o menu quando ativo */
+}
+
+.botao-nav {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #072f60;
+  background-color: white;
+  border: 5px double #072f60; /* Moldura azul */
+}
+
+.botao-nav:hover {
+  background-color: #072f60;
+  color: white;
+}
+
+/* Main */
+.conteudo {
+  text-align: center;
+  margin: 20px;
+}
+
+.container-imagem {
+  position: relative;
+  display: inline-block; /* Para ajustar o tamanho ao da imagem */
+}
+
+.imagem-central {
+  display: block; /* Remove o espaço abaixo da imagem */
+  width: 100%; /* Ajusta a largura da imagem conforme o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border: 5px solid white; /* Borda branca */
+  padding: 5px; /* Espaçamento interno para a moldura */
+  border: 5px double #072f60; /* Moldura azul igual à do cabeçalho */
+}
+
+.texto-sobreposto {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  right: 60%; /* Move o texto para a direita */
+  transform: translateY(-50%); /* Ajusta a posição vertical para o centro */
+  color: white; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  background-color: rgba(0, 0, 0, 0); /* Fundo semi-transparente */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Footer */
+.nav-rodape {
+  list-style-type: none;
+  padding: 0;
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  border: 5px double #072f60;
+}
+
+.nav-rodape li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-rodape a { 
+  color: #072f60; /* Cor do texto azul principal */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.nav-rodape a:hover {
+  color: #3b5663; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.logo-rodape img {
+  width: 100px; /* Ajuste conforme necessário */
+}
+
+.logo-cabecalho {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: 100px; /* Altura proporcional */
+  margin-right: 10px; /* Espaço entre o logo e o título */
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+.titulo-site {
+  display: inline-block;
+  vertical-align: middle; /* Alinha verticalmente com o logo */
+  font-size: 2rem;
+  color: #072f60;
+  font-weight: bold;
+}
