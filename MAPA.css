@@ -1,0 +1,32 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Fundo levemente azul */
+  }
+  
+  /* Container */
+  .container {
+    border: 5px double #072f60; /* Borda dupla azul */
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff; /* Fundo branco */
+  }
+  
+  /* Links */
+  .container a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #072f60;
+    border: 5px double #072f60; /* Borda dupla azul */
+    background-color: white;
+  }
+  
+  .container a:hover {
+    background-color: #3b5663; /* Cor de fundo cinza ao passar o mouse */
+    color: white;
+  }
+  
