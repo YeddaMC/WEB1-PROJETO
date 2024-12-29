@@ -1,10 +1,17 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
 
-    if (!name || !email || !message) {
-        event.preventDefault(); // Impede o envio do formulário
-        alert('Por favor, preencha todos os campos.');
-    }
+    form.addEventListener('submit', function(event) {
+        // CAMPOS DO FORM.
+        const nome = document.getElementById('nome');
+        const email = document.getElementById('email');
+        const mensagem = document.getElementById('mensagem');
+
+        // VERIFICA SE TEM CAMPO VAZIO
+        if (nome.value.trim() === '' || email.value.trim() === '' || mensagem.value.trim() === '') {
+            //SOLICITA PREENCHIMENTO
+            event.preventDefault();
+            alert('Por favor, preencha todos os campos.');
+        }
+    });
 });
