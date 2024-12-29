@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Contato</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <script src="CONTATO.js" defer></script> <!-- Link para o arquivo JavaScript separado com defer -->
+    <link rel="stylesheet" href="CONTATO.css">
+    <script src="CONTATO.js" defer></script>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="navbar">
+        <a href="index.html">🏠</a>
+    </div>
+    <div class="container">
         <h2>Formulário de Contato</h2>
-        <form id="contactForm" action="https://formspree.io/f/nnnnnnn" method="post"> <!-- Substitua {YOUR_FORM_ID} pelo seu ID do Formspree -->
-            <div class="form-group">
-                <label for="name">Nome</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+        <form action="https://formspree.io/f/mrbbkkpz" method="POST">
+            <div class="grupo-formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+            <div class="grupo-formulario">
+                <label for="email">Email para resposta:</label>
+                <input type="email" id="email" name="_replyto" required>
             </div>
-            <div class="form-group">
-                <label for="message">Mensagem</label>
-                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+            <div class="grupo-formulario">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
