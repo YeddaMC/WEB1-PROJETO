@@ -74,6 +74,7 @@ header {
   color: #072f60;
   background-color: white;
   border: 5px double #072f60; /* Moldura azul */
+  transition: background-color 0.6s ease; /*TRANSIÇÃO SUAVE*/
 }
 
 .botao-nav:hover {
