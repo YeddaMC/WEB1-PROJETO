@@ -3,21 +3,25 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff; /* Cor de fundo branca */
+  background-color: #f0f8ff; /* Fundo azulado */
 }
 
 /* Header */
+header {
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  border: 5px double #072f60; /* Borda dupla azul escuro */
+  padding: 15px;
+}
+
+/* Barra de Navegação */
 .barra-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 5px double #072f60; /* Borda dupla com o tom de azul */
-  padding: 15px;
-  background-color: #d3d3d3; /* Cor de fundo cinza */
 }
 
 .logo img {
-  height: 40px;
+  height: 80px;
 }
 
 .titulo-site { 
@@ -67,9 +71,13 @@ body {
 }
 
 /* Main */
-.conteudo {
+main {
   text-align: center;
   margin: 20px;
+}
+
+.conteudo {
+  text-align: center;
 }
 
 .container-imagem {
@@ -89,21 +97,27 @@ body {
 .texto-sobreposto {
   position: absolute;
   top: 50%; /* Centraliza verticalmente */
-  right: 60%; /* Move o texto para a direita */
-  transform: translateY(-50%); /* Ajusta a posição vertical para o centro */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-95%, -50%); /* POSIÇÃO DO TEXTO */
   color: white; /* Cor do texto */
-  font-size: 1rem; /* Tamanho da fonte */
-  text-align: center; /* Centraliza o texto */
-  background-color: rgba(0, 0, 0, 0); /* Fundo semi-transparente */
+  font-size: calc(1rem + 0.5vw); /* TAMANHO FONTE */
+ 
   padding: 20px; /* Espaçamento interno */
+  background-color: rgba(0, 0, 0, 0.0); /* Fundo semi-transparente para melhorar a legibilidade */
 }
 
 /* Footer */
+footer {
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  border: 5px double #072f60;
+  text-align: center; /* Centraliza o texto */
+  padding: 10px;
+}
+
 .nav-rodape {
   list-style-type: none;
   padding: 0;
-  background-color: #d3d3d3; /* Cor de fundo cinza */
-  border: 5px double #072f60;
+  margin: 0;
 }
 
 .nav-rodape li {
@@ -111,18 +125,18 @@ body {
   margin: 0 10px;
 }
 
-.nav-rodape a { 
+.nav-rodape a {
   color: #072f60; /* Cor do texto azul principal */
   text-decoration: none; /* Remove sublinhado */
 }
 
 .nav-rodape a:hover {
-  color: #3b5663; /* Cor ao passar o mouse */
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  color:  #2323FF; /* Cor ao passar o mouse/AZUL NEON */
+  text-decoration: underline; /* UNDERLINE AO PASSAR O MOUSE */
 }
 
 .logo-rodape img {
-  width: 100px; /* Ajuste conforme necessário */
+  width: 100px; /* AJUSTE PROPORCIONAL */
 }
 
 .logo-cabecalho {
@@ -134,7 +148,7 @@ body {
 
 .titulo-site {
   display: inline-block;
-  vertical-align: middle; /* Alinha verticalmente com o logo */
+  vertical-align: middle; /* LOGO ALINHAMENTO */
   font-size: 2rem;
   color: #072f60;
   font-weight: bold;
