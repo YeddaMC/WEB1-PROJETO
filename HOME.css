@@ -59,11 +59,11 @@ header {
 }
 
 .menu {
-  display: none; /* Inicialmente escondido */
+  display: none; /* Inicia escondido */
 }
 
 .menu.ativa {
-  display: block; /* Mostra o menu quando ativo */
+  display: block; /* Mostra o menu  */
 }
 
 .botao-nav {
@@ -170,18 +170,6 @@ footer {
   text-decoration: underline; /* UNDERLINE AO PASSAR O MOUSE */
 }
 
-.logo-rodape img {
-  width: 100px; /* AJUSTE PROPORCIONAL */
-}
-
-.logo-cabecalho {
-  width: 100px; /* Ajuste o tamanho conforme necessário */
-  height: 100px; /* Altura proporcional */
-  margin-right: 10px; /* Espaço entre o logo e o título */
-  vertical-align: middle; /* Alinha verticalmente com o texto */
-}
 
 
-
-  
  
