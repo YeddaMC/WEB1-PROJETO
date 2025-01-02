@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f8ff; /* Fundo azulado */
-  border: 5px double #072f60; /* Borda dupla azul escuro */
 }
 
 /* Header */
@@ -51,7 +50,7 @@ header {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.6s ease;
-   border: 5px double #072f60; /* Borda dupla azul escuro */
+  border: 5px double #072f60; /* Borda dupla azul escuro */
 }
 
 .botao-menu:hover {
@@ -59,11 +58,11 @@ header {
 }
 
 .menu {
-  display: none; /* Inicia escondido */
+  display: none; /* Inicialmente escondido */
 }
 
 .menu.ativa {
-  display: block; /* Mostra o menu  */
+  display: block; /* Mostra o menu quando ativo */
 }
 
 .botao-nav {
@@ -74,14 +73,13 @@ header {
   color: #072f60;
   background-color: white;
   border: 5px double #072f60; /* Moldura azul */
-  transition: background-color 0.6s ease; /*TRANSIÇÃO SUAVE*/
+  transition: background-color 0.1s ease;
 }
 
 .botao-nav:hover {
-  background-color: #A9A9A9; ;
+  background-color: #072f60;
   color: white;
 }
-
 
 /* Main */
 main {
@@ -93,53 +91,9 @@ main {
   text-align: center;
 }
 
-.container-imagem {
-  
-  position: relative;
-  display: inline-block; /* Para ajustar o tamanho ao da imagem */
-   
-  margin:0px 0px;
-    /* margem superior e inferior */
-    
-}
-
-
-
-.imagem-central {
-  display: block; /* Remove o espaço abaixo da imagem */
-  width: 100%; /* largura da imagem/contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  
-  padding: 30px; /* Espaçamento interno para a moldura */
-  border: 8px double #072f60; /* Moldura azul igual à do cabeçalho */
-  margin: 10px 0px; 
-
-  /* 10 margem superior e inferior - 0 margens laterais*/
-}
-
-.texto-sobreposto {
-  position: absolute;
-  top: 50%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-95%, -50%); 
-  color: white; /* Cor do texto */
-  font-size: calc(0.8rem + 0.5vw); /* TAMANHO FONTE */
- 
-  padding: 30px; /* Espaçamento interno */
-  background-color: rgba(0, 0, 0, 0.0);
-  /* transparente */
-}
- .texto-sobreposto {
-  position: absolute;
-  top: 45%; /* posiçao vertical*/
-  left: 25%; /* posiçao horizontal*/
-  transform: translate(-45%, -50%); /* POSIÇÃO DO TEXTO */
-  color: white; /* Cor do texto */
-  font-size: calc(0.7rem + 1vw); /*fonte proporcional imagem */
-  max-width: 40%; /*   LARGURA LIMITADA*/
-  text-align: center; /* texto centro */
-  padding: 0px; /* para nao sobrepor */
-  background-color: rgba(0, 0, 0, 0.0); /* transparente */
+/* Adicionado a classe para imagem central */
+main img {
+  border: 5px double #072f60; /* Borda dupla azul escuro */
 }
 
 /* Footer */
@@ -170,7 +124,3 @@ footer {
   color:  #2323FF; /* Cor ao passar o mouse/AZUL NEON */
   text-decoration: underline; /* UNDERLINE AO PASSAR O MOUSE */
 }
-
-
-
- 
