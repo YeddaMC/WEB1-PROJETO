@@ -91,9 +91,10 @@ main {
   text-align: center;
 }
 
-/* Adicionado a classe para imagem central */
 main img {
   border: 5px double #072f60; /* Borda dupla azul escuro */
+  max-width: 100%; /* largura max da imagem/tamanho máx do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 /* Footer */
