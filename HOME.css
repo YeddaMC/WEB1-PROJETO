@@ -73,7 +73,7 @@ header {
   color: #072f60;
   background-color: white;
   border: 5px double #072f60; /* Moldura azul */
-  transition: background-color 0.1s ease;
+  transition: background-color 0.8s ease;
 }
 
 .botao-nav:hover {
