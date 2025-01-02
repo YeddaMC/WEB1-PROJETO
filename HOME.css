@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f8ff; /* Fundo azulado */
+  border: 5px double #072f60; /* Borda dupla azul escuro */
 }
 
 /* Header */
@@ -22,6 +23,7 @@ header {
 
 .logo img {
   height: 80px;
+  border: 5px double #072f60; /* Borda dupla azul escuro */
 }
 
 .titulo-site { 
@@ -32,6 +34,14 @@ header {
   display: inline-block; 
   vertical-align: middle; 
 }
+.titulo-site {
+  display: inline-block;
+  vertical-align: middle; /* LOGO ALINHAMENTO */
+  font-size: 2rem;
+  color: #072f60;
+  font-weight: bold;
+  margin-left: 1rem; /* Margem relativa */ 
+}
 
 .botao-menu {
   background-color: #072f60; /* Cor de fundo azul principal */
@@ -40,11 +50,12 @@ header {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.6s ease;
+   border: 5px double #072f60; /* Borda dupla azul escuro */
 }
 
 .botao-menu:hover {
-  background-color: #3b5663; /* Cor de fundo cinza ao passar o mouse */
+  background-color: #A9A9A9; /* Cor de fundo cinza ao passar o mouse */
 }
 
 .menu {
@@ -68,12 +79,13 @@ header {
 .botao-nav:hover {
   background-color: #072f60;
   color: white;
+   
 }
 
 /* Main */
 main {
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .conteudo {
@@ -81,29 +93,52 @@ main {
 }
 
 .container-imagem {
+  
   position: relative;
   display: inline-block; /* Para ajustar o tamanho ao da imagem */
+   
+  margin:0px 0px;
+    /* margem superior e inferior */
+    
 }
+
+
 
 .imagem-central {
   display: block; /* Remove o espaço abaixo da imagem */
-  width: 100%; /* Ajusta a largura da imagem conforme o contêiner */
+  width: 100%; /* largura da imagem/contêiner */
   height: auto; /* Mantém a proporção da imagem */
-  border: 5px solid white; /* Borda branca */
-  padding: 5px; /* Espaçamento interno para a moldura */
-  border: 5px double #072f60; /* Moldura azul igual à do cabeçalho */
+  
+  padding: 30px; /* Espaçamento interno para a moldura */
+  border: 8px double #072f60; /* Moldura azul igual à do cabeçalho */
+  margin: 10px 0px; 
+
+  /* 10 margem superior e inferior - 0 margens laterais*/
 }
 
 .texto-sobreposto {
   position: absolute;
   top: 50%; /* Centraliza verticalmente */
   left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-95%, -50%); /* POSIÇÃO DO TEXTO */
+  transform: translate(-95%, -50%); 
   color: white; /* Cor do texto */
-  font-size: calc(1rem + 0.5vw); /* TAMANHO FONTE */
+  font-size: calc(0.8rem + 0.5vw); /* TAMANHO FONTE */
  
-  padding: 20px; /* Espaçamento interno */
-  background-color: rgba(0, 0, 0, 0.0); /* Fundo semi-transparente para melhorar a legibilidade */
+  padding: 30px; /* Espaçamento interno */
+  background-color: rgba(0, 0, 0, 0.0);
+  /* transparente */
+}
+ .texto-sobreposto {
+  position: absolute;
+  top: 45%; /* posiçao vertical*/
+  left: 25%; /* posiçao horizontal*/
+  transform: translate(-45%, -50%); /* POSIÇÃO DO TEXTO */
+  color: white; /* Cor do texto */
+  font-size: calc(0.7rem + 1vw); /*fonte proporcional imagem */
+  max-width: 40%; /*   LARGURA LIMITADA*/
+  text-align: center; /* texto centro */
+  padding: 0px; /* para nao sobrepor */
+  background-color: rgba(0, 0, 0, 0.0); /* transparente */
 }
 
 /* Footer */
@@ -146,10 +181,7 @@ footer {
   vertical-align: middle; /* Alinha verticalmente com o texto */
 }
 
-.titulo-site {
-  display: inline-block;
-  vertical-align: middle; /* LOGO ALINHAMENTO */
-  font-size: 2rem;
-  color: #072f60;
-  font-weight: bold;
-}
+
+
+  
+ 
