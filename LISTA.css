@@ -14,3 +14,32 @@ body {
     margin: 20px;
     background-color: #d3d3d3; /* Cor de fundo cinza */
 }
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent; /* Transparente para mostrar o fundo do container */
+}
+
+th, td {
+    border: 5px double #072f60; /* Bordas duplas azul escuro */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #797676; /* Fundo cabeçalhos */
+    color: #fff; /* Cor do texto branco nos cabeçalhos */
+}
+
+/* Links */
+a {
+    color: #072f60; /* Cor dos links em azul escuro */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2ab7f8; /* Cor dos links ao passar o mouse (azul neon) */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
