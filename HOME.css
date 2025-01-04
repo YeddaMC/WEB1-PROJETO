@@ -118,10 +118,10 @@ main img {
 }
 
 main img { border: 5px double #072f60; /* Borda dupla azul escuro */
-   max-width: 80%; /*  largura máxima da imagem */ 
-   height: auto; /*  proporção  */
-   margin: 20px auto; /* 20 DE MARGENS  E CENTRALIZAÃO */
-   display: block; /*  margens */ }
+   max-width: 80%; /* Defina a largura máxima da imagem */ 
+   height: auto; /* Mantém a proporção da imagem */
+   margin: 20px auto; /* Centraliza a imagem e adiciona margens */
+   display: block; /* Para garantir que as margens funcionem corretamente */ }
 
 /* Footer */
 footer {
