@@ -43,3 +43,31 @@ a:hover {
     color: #2ab7f8; /* Cor dos links ao passar o mouse (azul neon) */
     text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
+/* ajuste do conteudo da tabela telas menores/extrapolando o container */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Garante que o conteúdo da tabela não quebre para a próxima linha */
+    }
+
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }
+
+    th {
+        font-size: 14px; /* Reduz o tamanho da fonte dos cabeçalhos */
+    }
+
+    td {
+        font-size: 12px; /* Reduz o tamanho da fonte das células */
+    }
+}
+
