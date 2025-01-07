@@ -40,9 +40,12 @@ a {
 }
 
 a:hover {
-    color: #2ab7f8; /* Cor dos links ao passar o mouse (azul neon) */
+    color: #2ab7f8; /* cor dos links ao passar o mouse (azul neon) */
     text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
+
+
+
 /* ajuste do conteudo da tabela telas menores/extrapolando o container */
 @media (max-width: 600px) {
     .container {
@@ -58,7 +61,7 @@ a:hover {
     }
 
     th, td {
-        padding: 5px;
+        padding: 5 px;
         text-align: center;
     }
 
@@ -70,4 +73,31 @@ a:hover {
         font-size: 12px; /* Reduz o tamanho da fonte das células */
     }
 }
+
+table img {
+  width: 100%;  /* imagem 100% da largura da célula */
+  height: auto; /* proporção da imagem */
+  object-fit: contain; /* imagem sem distorção */
+}
+
+
+
+td img {
+    width: 100%;          /* IMAGEM OCUPA 100% */
+    height: auto;         /*  proporção das imagens */
+    display: block;       /* força cada imagem a ocupar uma nova linha */
+    margin-bottom: 5px;   /* margem entre as imagens */
+}
+
+
+/* COLUNAS DA MESMA LARGURA*/
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table td {
+  width: 25%; /* Ajuste colunas */
+}
+
 
