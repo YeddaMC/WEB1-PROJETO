@@ -14,3 +14,7 @@ body {
     margin: 20px;
     background-color: #d3d3d3; /* Cor de fundo cinza */
 }
+
+ .video-container {
+            text-align: center;
+}
